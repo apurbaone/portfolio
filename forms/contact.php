@@ -28,7 +28,7 @@
   $contact->smtp = array(
     'host' => 'mail.apurba.one',
     'username' => 'noreply@apurba.one',
-    'password' => '~Ny#4}n+K@HD',
+    'password' => '#',
     'port' => '465'
   );
 
