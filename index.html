@@ -9,20 +9,35 @@
   <title>Apurba's Blog</title>
   <link href="img/AB.png" rel="icon">
   
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/venobox/venobox.css" rel="stylesheet">
   <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+    /* Example Media Query */
+    @media (max-width: 768px) {
+      .hero-container {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile">
+      <div class="profile" data-aos="zoom-in">
         <img src="img/PP400.png" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Apurba Barai</a></h1>
         <div class="social-links mt-3 text-center">
@@ -44,6 +59,7 @@
           <!--<li><a href="#resume"> <i class="bx bx-file-blank"></i> <span>Resume</span></a></li> -->
           <li><a href="#portfolio"> <i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#contact"> <i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#blog"><i class="bx bx-news"></i> <span>Blog</span></a></li>
         </ul>
       </nav>
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -51,13 +67,13 @@
   </header>
 
   <!----------- Main front Section ----------->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Apurba Barai</h1>
-      <p>I'm a <span class="typed"
-          data-typed-items="Tech Enthusiast, Dreamer, Traveller "></span></p>
-    </div>
-  </section>
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center" 
+  style="background: url('img/hero-bg.jpg') no-repeat center center/cover; color: white; height: 100vh;">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Apurba Barai</h1>
+    <p>I'm a <span class="typed" data-typed-items="Tech Enthusiast, Dreamer, Traveller"></span></p>
+  </div>
+</section>
 
 
   <main id="main">
@@ -150,9 +166,9 @@
               <td style="width: 15.5cm;"> Single Website for E-commerce Busness
               </td>
               <td>
-                <a href="https://comfycloset.shop" target="_blank">Visit</a>
+                <a href="https://yapgen.com" target="_blank">Visit</a>
                 <br>
-                <a href="https://comfycloset.shop" target="_blank">The Website</a>
+                <a href="https://yapgen.com" target="_blank">The Website</a>
               </td>
             </tr>
             <tr>
@@ -238,9 +254,44 @@
           </tbody>
         </table>
       </div>
+     
+<!----------- Blog Section ----------->
+<section id="blog" class="blog section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Blog</h2>
+      <p>Check out my latest blog posts below.</p>
     </div>
-      
-    
+    <div class="row">
+      <!-- Blog Post 1 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="blog-post" style="background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px;">
+          <img src="img/blog-khulna.jpg" alt="Khulna City Visit" class="img-fluid" style="border-radius: 10px;">
+          <h3><a href="blog-khulna.html">A Memorable Visit to Khulna City</a></h3>
+          <p>Explore the beauty and culture of Khulna City through my eyes.</p>
+          <a href="blog-khulna.html" class="btn btn-primary" style="margin-top: 10px;">Read More</a>
+        </div>
+      </div>
+      <!-- Blog Post 2 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="blog-post" style="background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px;">
+          <img src="img/blog-sunset.jpg" alt="Sunset" class="img-fluid" style="border-radius: 10px;">
+          <h3><a href="blog-sunset.html">The Magic of a Sunset</a></h3>
+          <p>Discover the tranquility and beauty of watching the sun set over the horizon.</p>
+          <a href="blog-sunset.html" class="btn btn-primary" style="margin-top: 10px;">Read More</a>
+        </div>
+      </div>
+      <!-- Blog Post 3 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+        <div class="blog-post" style="background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px;">
+          <img src="img/blog-chittagong.jpg" alt="Chittagong Port" class="img-fluid" style="border-radius: 10px;">
+          <h3><a href="blog-chittagong.html">A Day at Chittagong Port</a></h3>
+          <p>Experience the hustle and bustle of one of the busiest ports in Bangladesh.</p>
+          <a href="blog-chittagong.html" class="btn btn-primary" style="margin-top: 10px;">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!----------- contact Section ----------->
@@ -324,6 +375,28 @@
 
 </main>
 
+<!-- Add Dark Mode Toggle -->
+<button id="dark-mode-toggle" style="position: fixed; top: 10px; right: 10px;">Toggle Dark Mode</button>
+
+<script>
+  const toggle = document.getElementById('dark-mode-toggle');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+
+  // Add dark mode styles
+  const style = document.createElement('style');
+  style.innerHTML = `
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+    .dark-mode a {
+      color: #00f2fe;
+    }
+  `;
+  document.head.appendChild(style);
+</script>
 
   <script>
     let age = new Date(Date.now() - new Date(1992, 15, 6).getTime()).getUTCFullYear() - 1970;
@@ -332,15 +405,18 @@
   </script> 
 
   <!-- --------- Footer --------- -->
-  <footer id="footer">
+  <footer id="footer" style="background: #4facfe; color: white; padding: 20px;">
     <div class="container">
       <div class="credits">
-        <span class="text-muted">Developed by <a href="https://apurba.one/">Apurba</a></span>
+        <span>Developed by <a href="https://apurba.one/" style="color: white;">Apurba</a></span>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <!-- Update Back-to-Top Button -->
+  <a href="#" class="back-to-top" style="background: #00f2fe; color: white; border-radius: 50%; padding: 10px;">
+    <i class="icofont-simple-up"></i>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="vendor/jquery/jquery.min.js"></script>

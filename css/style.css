@@ -20,8 +20,8 @@ a {
 }
 
 a:hover {
-  color: #37b3ed;
-  text-decoration: none;
+  color: #00f2fe;
+  text-decoration: underline;
 }
 
 h1,
@@ -1197,4 +1197,25 @@ table.fixed td {
 
 .bg-lb {
   color: #149ddd;
+}
+
+.btn:hover {
+  background-color: #00f2fe;
+  color: white;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.blog-post h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #666;
 }
